@@ -2,13 +2,9 @@
 set -x
 
 readonly work_dir=$(dirname "$(readlink --canonicalize-existing "${0}" 2> /dev/null)")
-readonly cli_lib="${work_dir}/cli.sh"
-readonly aux_lib="${work_dir}/a.lib"
+readonly a_script="${work_dir}/a.sh"
 
-. "${cli_lib}"
-. "${aux_lib}"
-
+. "${a_script}"
 foo
-check
 
 exit 0

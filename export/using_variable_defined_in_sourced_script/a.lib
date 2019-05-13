@@ -1,1 +1,3 @@
-asdhagsjhdgas
+check() {
+	echo "Hello! ${name}"
+}
