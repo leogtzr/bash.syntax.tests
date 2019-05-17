@@ -1,0 +1,3 @@
+foo() {
+	export name="Leo"
+}
