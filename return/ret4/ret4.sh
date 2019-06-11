@@ -4,9 +4,9 @@ set -x
 
 func() {
     if ps -ef | grep -E -q '[s]leep'; then
-        true
+        return 0 #true
     else
-        false
+        return 1 #false
     fi
 }
 
